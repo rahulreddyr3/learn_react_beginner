@@ -34,3 +34,6 @@ npm start
 * Every other component we create, we will render them to `App` component.
 * As you might have guessed, this works for single page website/app, but how can we have multiple page apps when we are rendering everything same app component?
     * The answer is `react-router` which allows us to render multiple pages from the `App` component itself based on `url`.
+
+### Let's build todo again
+* First Lets clean `App.js`
