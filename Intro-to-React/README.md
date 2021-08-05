@@ -40,3 +40,4 @@ npm start
 * Now that we have the App running lets re-create the to do part we did before. Let create some components for this in `components`.
   * First let's create a `Button` component and add it to `App`.
 * In order to build the todos we would need some place to store them. Unlike with pure JS we won't store them in HTML. We would need to create a state for that. Lets create them in `App.js`
+* Now let's create a `Todos` component to display the todos in the state.
