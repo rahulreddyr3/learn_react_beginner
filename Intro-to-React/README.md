@@ -43,3 +43,4 @@ npm start
 * Now let's create a `Todos` component to display the todos in the state.
 * At this state the app has state and can show the state, But cannot add to it. Lets do that next.
   * Inorder to add to todos we would need to capture the current todo into the state. We can do it using `onChange`.
+* Now we have everything ready, Lets finish it by adding an `onClick` on `Button` to update the state.
