@@ -11,3 +11,5 @@
 * Now that the JS is linked to HTML, lets
     * Add a few elements to HTML and change them from JS.
     * Lets try to add CSS
+
+* Now that thing can be changed, let make thing interactive

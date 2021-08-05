@@ -3,17 +3,30 @@
 // Test thing are working with the `secret hello`.
 console.log("Secret Hello");
 
-/////////////////////////// DOM Manipulation With Vanilla JS ///////////////////////////
+/////////////////////////// Making Things Interactive With Vanilla JS ///////////////////////////
 
-// To access the elements from html we can select them by the class name. (Note: There many other methods to do this. This felt easy)
-const title = document.querySelector(".title")
+// The main use of JS is not only to change the elements on fly we also make them interactive.
+// This is done by eventListeners in JS
 
-// Once we have the element we can change it in JS and this will get reflected in the page.
-// title.style.color = "green";
-// title.style.backgroundColor = "red";
+// Let's get the button, title to JS
+// const button = document.querySelector(".button")
+// const title = document.querySelector(".title")
 
-// For JS we can also change the class of an element to apply styling.
-// For this create the class in a css file.
-// Link the css to Html with `<link rel="stylesheet" href="style.css"/>`
+// Now on ths button we can setup event listeners.
+// Event listeners once setup will execute the give function on said action. For Eg:
 
-// title.classList.add("change")
+// button.addEventListener('click', function (){
+//     console.log("I am fine Human.");
+//     title.innerHTML = "I am fine Human."
+//     button.innerHTML = "ok"
+// })
+
+
+// Interesting thing in JS is that we can use the function and then define it below. Still works.
+// button.addEventListener('click', onClick)
+//
+// function onClick() {
+//     console.log("I am fine Human.");
+//     title.innerHTML = "I am fine Human."
+//     button.innerHTML = "ok"
+// }
