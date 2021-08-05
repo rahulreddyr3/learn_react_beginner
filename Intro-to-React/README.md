@@ -37,3 +37,5 @@ npm start
 
 ### Let's build todo again
 * First Lets clean `App.js`
+* Now that we have the App running lets re-create the to do part we did before. Let create some components for this in `components`.
+  * First let's create a `Button` component and add it to `App`.
