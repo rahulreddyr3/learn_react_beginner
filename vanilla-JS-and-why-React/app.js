@@ -3,30 +3,30 @@
 // Test thing are working with the `secret hello`.
 console.log("Secret Hello");
 
-/////////////////////////// Making Things Interactive With Vanilla JS ///////////////////////////
+/////////////////////////// Now lets do some TO-DO ///////////////////////////
+// Not that we have elements in html, lets get them to JS
 
-// The main use of JS is not only to change the elements on fly we also make them interactive.
-// This is done by eventListeners in JS
+const addToDo = document.querySelector(".add-todo");
+const toDoDisplay = document.querySelector(".todo-display");
+const toDoInput = document.querySelector(".todo-input");
 
-// Let's get the button, title to JS
-// const button = document.querySelector(".button")
-// const title = document.querySelector(".title")
+// Not that we have everything, Lets start.
+addToDo.addEventListener('click', clickedAddToDo);
 
-// Now on ths button we can setup event listeners.
-// Event listeners once setup will execute the give function on said action. For Eg:
+function clickedAddToDo() {
+    console.log("Add ToDo button clicked");
+    // Now we need to add what ever is present in the input to the existing list
+    // So first create a new element to add to list
+    const newToDo = document.createElement("LI");
+    // Get the value from the input. This will be empty if nothing is there in the input.
+    console.log(toDoInput.value)
+    // Now create content for the li
+    const newTodoContent = document.createTextNode(toDoInput.value)
+    // Add content to the new todo
+    newToDo.appendChild(newTodoContent)
+    // Now add new to do to the list
+    toDoDisplay.appendChild(newToDo)
+    // Ok, It also adds empty To Do's.
+}
 
-// button.addEventListener('click', function (){
-//     console.log("I am fine Human.");
-//     title.innerHTML = "I am fine Human."
-//     button.innerHTML = "ok"
-// })
-
-
-// Interesting thing in JS is that we can use the function and then define it below. Still works.
-// button.addEventListener('click', onClick)
-//
-// function onClick() {
-//     console.log("I am fine Human.");
-//     title.innerHTML = "I am fine Human."
-//     button.innerHTML = "ok"
-// }
+// Similarly we can build the update and delete functons.

@@ -10,6 +10,10 @@
 ### Let's build things
 * Now that the JS is linked to HTML, lets
     * Add a few elements to HTML and change them from JS.
-    * Lets try to add CSS
+    * Let's try to add CSS
 
 * Now that thing can be changed, let make thing interactive
+
+### What's next?
+* Now that we know how to manipulate thing and make them interactive. Let's build a sample todos app.
+  * For this let's create the required HTML elements and build in app.js
