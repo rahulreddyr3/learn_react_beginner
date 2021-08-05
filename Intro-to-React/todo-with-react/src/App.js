@@ -1,20 +1,25 @@
 import Button from "./components/Button";
 import {useState} from "react";
-// Importing Todos component
 import Todos from "./components/todos"
 
 const App = () => {
     const [todos, setTodo] = useState([{id: 1, name: 'initial todo'}]);
     const [todoInput, setTodoInput] = useState([]);
 
+    // Just like on onClick we have seen before we can have an eventListener to listen to changes happening in text element.
+    const onChange = (event) => {
+        console.log("event changed : " + event.target.value);
+        setTodoInput(event.target.value);
+    }
+
     return (
         <div>
             <h1>
                 Hello From react
             </h1>
-            {/* To render the state we can simply pass the state as a prop*/}
             <Todos todos={todos}/>
-            <input type="text"/>
+            {/*Setting the above created function as the eventListener*/}
+            <input type="text" onChange={onChange}/>
             <Button/>
         </div>
     )

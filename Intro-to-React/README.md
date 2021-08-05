@@ -41,3 +41,5 @@ npm start
   * First let's create a `Button` component and add it to `App`.
 * In order to build the todos we would need some place to store them. Unlike with pure JS we won't store them in HTML. We would need to create a state for that. Lets create them in `App.js`
 * Now let's create a `Todos` component to display the todos in the state.
+* At this state the app has state and can show the state, But cannot add to it. Lets do that next.
+  * Inorder to add to todos we would need to capture the current todo into the state. We can do it using `onChange`.
